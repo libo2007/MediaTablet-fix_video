@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="@dimen/video_item_size"
+        android:layout_height="@dimen/video_item_size">
+
+        <ImageView
+            android:id="@+id/cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/video_image" />
+
+        <ImageView
+            android:id="@+id/start"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:src="@drawable/jc_click_play_selector" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/play_btn"
+        style="@style/btn_grey_style"
+        android:layout_width="@dimen/video_item_size"
+        android:layout_marginTop="@dimen/btn_margin"
+        android:text="播放"
+        android:visibility="gone" />
+</LinearLayout>
